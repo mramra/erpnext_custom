@@ -33,7 +33,8 @@ app_license = "MIT"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-
+doctype_js = {"Quotation" : "public/js/quotation.js",
+              "Sales Invoice" : "public/js/sales_invoice.js"}
 # Home Pages
 # ----------
 
@@ -97,7 +98,9 @@ app_license = "MIT"
 # override_doctype_class = {
 #	"ToDo": "custom_app.overrides.CustomToDo"
 # }
-
+override_doctype_class = {
+    "Purchase Order": "erpnext_custom.erpnext_custom.overrides.purchase_order.PurchaseOrder"
+    } 
 # Document Events
 # ---------------
 # Hook on document methods and events
