@@ -1,0 +1,1 @@
+erpnext_custom.patches.add_xx_to_werehouse
