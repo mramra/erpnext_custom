@@ -35,7 +35,8 @@ app_license = "MIT"
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 doctype_js = {"Quotation" : "public/js/quotation.js",
               "Sales Invoice" : "public/js/sales_invoice.js",
-              "Warehouse" : "public/js/Warehouse.js"
+              "Warehouse" : "public/js/Warehouse.js",
+              "Item" : "public/js/items.js"
               }
 # Home Pages
 # ----------
@@ -117,7 +118,10 @@ override_doctype_class = {
 doc_events = {
     "Purchase Invoice":{
     "on_submit" : "erpnext_custom.erpnext_custom.doc_event.purchase_invoice_event.creat_purchase_receipt"
-    }
+    },
+    "Material Request": {
+	"on_submit": "erpnext_custom.erpnext_custom.doc_events.material_request.create_new_stock_entry",
+		}
 }
 # Scheduled Tasks
 # ---------------

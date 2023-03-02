@@ -1,1 +1,2 @@
 erpnext_custom.patches.add_xx_to_werehouse
+erpnext_custom.patches.add_department_to_bom
